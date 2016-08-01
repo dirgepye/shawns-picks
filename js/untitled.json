@@ -1,0 +1,25 @@
+var array = [
+	{
+		"artist": "Schoolboyyy Q",
+		"genre": "Rap",
+		"album": {
+			"title":"Blank Face Lp",
+			"cover":"images/blank_face_lp_cover.jpg",
+			"release": 20160708,
+			"rating": "B+",
+			"allTime": false
+		},
+	},
+	{
+		"artist": "The Clash",
+		"genre": "Punk",
+		"album" : {
+			"title": "London Calling",
+			"cover": "images/london_calling_cover.jpg",
+			"release": 19791214,
+			"rating": "A+",
+			"allTime": true
+		}
+	}
+
+	]
