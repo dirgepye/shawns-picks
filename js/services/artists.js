@@ -1,5 +1,5 @@
 app.factory('artists', ['$http',function($http){
-	return $http.get('https://preview.c9users.io/dirgepye/portfolio/music.json')
+	return $http.get('js/music.json')
 		.success(function(data) {
 			return data;	
 		})

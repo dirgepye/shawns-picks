@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Suggestion Box</title>
-		<script type="text/javascript" src="js/vendor/angular.min.js"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	</head>
-	<body ng-app="SuggestionBox" ng-controller="HomeController">
-		<h1> {{ helloWorld }} </h1>
 
-		<div class="main">
-			<div class="container">
-				<div ng-repeat="artist in artists">
-					<p>{{ artist.genre }}</p>
-					<p>{{ artist.album.title }}</p>
+<head>
+	<title>Shawn's Picks</title>
+	<script type="text/javascript" src="js/vendor/angular.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css" type="text/css" />
+	<!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-						
+<body ng-app="SuggestionBox" ng-controller="HomeController">
+	<div class="container">
+		<div class="row">
+			<h1 class="main-title col-xs-4 col-sm-4 col-md-12">Shawn's Picks</h1>
+		</div>
+		<div class="main" ng-repeat="artist in artists">
+
+			<div class="row home-display__album">
+
+				<img class="col-sm-6 cover-img" ng-src="{{artist.album.cover}}">
+				<div class="col-sm-6 album-info">
+					<div class="col-xs-6" <p>Artist: {{ artist.artist }}</p>
+						<p>Album: {{ artist.album.title }}</p>
+					</div>
+					<div class="col-xs-6">
+						<p>Genre: {{ artist.genre }}</p>
+						<div class="btn">More</div>
+					</div>
 				</div>
+
 			</div>
 		</div>
-		 
-		<!-- Modules -->
-		<script type="text/javascript" src="js/app.js"></script>
-	
-		 
-		<!-- Controllers -->
-		<script type="text/javascript" src="js/controllers/HomeControllers.js"></script>
-		 
-		<!-- Services -->
-		<script type="text/javascript" src="js/services/artists.js"></script>
-	 
-	</body>
+	</div>
+
+
+
+	<!-- Modules -->
+	<script type="text/javascript " src="js/app.js "></script>
+
+
+	<!-- Controllers -->
+	<script type="text/javascript " src="js/controllers/HomeControllers.js "></script>
+
+	<!-- Services -->
+	<script type="text/javascript " src="js/services/artists.js "></script>
+
+</body>
+
 </html>

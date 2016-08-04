@@ -29,7 +29,7 @@
 		"album": 
 		{
 			"title": "Electric Magnolia Co.",
-			"cover": "images/electric_magnolia_co.jpg",
+			"cover": "images/magnolia_electric_co_cover.jpg",
 			"release": 20030304,
 			"rating": "A",
 			"allTime": true
@@ -40,7 +40,7 @@
 		"genre": "Electronic / Hip-Hop / Dance",
 		"album": {
 			"title":"Wildflower",
-			"cover": "images/wildflower_cover.jpg",
+			"cover": "images/wildflower_cover.png",
 			"release": 20160706,
 			"rating": "B",
 			"allTime": false
@@ -52,7 +52,7 @@
 		"album":
 		{
 			"title":"The Great Mixtape",
-			"cover":"the_great_mixtape_cover.jpg",
+			"cover":"images/the_great_mixtape_cover.jpg",
 			"release": 20140505,
 			"rating":"B+",
 			"allTime": false
