@@ -4,6 +4,6 @@ app.directive('homeDisplay', function(){
         scope: {
             artist: '='
         },
-        templateUrl: "js/directives/homeDisplay.html"
+        templateUrl: 'js/directives/homeDisplay.html'
     };
 });

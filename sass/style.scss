@@ -1,52 +1,81 @@
 @import url(https://fonts.googleapis.com/css?family=Codystar);
 @import url(https://fonts.googleapis.com/css?family=Offside);
+@import url(https://fonts.googleapis.com/css?family=Hind);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans);
+
+$light-blue: #00afe9;
+$slate: #1c1c1c;
 
 *,
 *:before,
 *:after {
     box-sizing: inherit;
     font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Hind', sans-serif;
+    //font-family: 'Work Sans', sans-serif;
+    //font-family: 'PT Sans', sans-serif;
     color: #dadada;
     margin: 0;
     padding: 0;
     list-style: none;
+    
+}
+img {
+    padding: 0 !important;
+   margin: 0 !important;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
         
 html {
     box-sizing: border-box;
 }
 
 body {
-    background: url('../images/bg1.jpg');
+    background: url('../images/bg2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     
 }
 
 .container {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+    //width: 1000px;
+    //margin-left: auto;
+    //margin-right: auto;
 }
 
+
+.main {
+    //position: fixed;
+    height: 100vh;
+    
+}
 .main-title {
-    text-shadow: 0 0 30px #33FFFF;
+    text-shadow: 0 0 30px $light-blue;
     font-family: 'Codystar', cursive;
     font-family: 'Offside', cursive;
     color: #fafafa;
-    font-size: 100px;
+    font-size: 300px;
     text-align: center;
 }
 
+.sub {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .cover-img {
-    max-width: 220px;
+    max-width: 400px;
 }
 
 .home-display__album {
     background-color: rgba(0,0,0,0.4);
     margin: 0 auto 40px auto;
-    padding: 20px;
+    //padding: 20px;
     width: 60%;
     
     .album-info {
@@ -54,3 +83,71 @@ body {
         margin: 0 auto 0 auto;
     }
 }
+
+.one {
+  stroke-dasharray: 1643.0728759765625;
+  stroke-dashoffset: 1643.0728759765625;
+  animation: dash 10s linear forwards;
+}
+
+.two {
+  stroke-dasharray: 1643.0728759765625;
+  stroke-dashoffset: 1643.0728759765625;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.home__album {
+    border-bottom: 5px solid $light-blue;
+    background-color: $slate;
+    padding-left: 15px;
+    
+    .home__album-details {
+        h2 {
+            font-size: 40px;
+            font-family: 'PT Serif', serif;
+            border-bottom: 2px solid $light-blue;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        h3 {
+            font-size: 25px;
+            font-family: 'PT Serif', serif;
+            margin: 5px 0;
+        }
+        
+        .home__date {
+            color: $light-blue;
+        }
+        
+        .home__rating {
+            background-color: $light-blue;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            padding-top: 4px;
+            margin-right: 30px;
+            margin-top: 15px;
+            p {
+                text-align: center;
+                font-size: 45px;
+                font-family: 'PT Serif', serif;
+            }
+        }
+    }
+    
+    .home__album-desc {
+        p {
+            
+        }
+    }
+}
+
+
+
