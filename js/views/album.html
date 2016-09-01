@@ -1,4 +1,38 @@
-<div>
-    <p>farts</p>
-    <p>{{artist.album.title}}</p>
+<div class="album__display">
+    <div class="row album__display-details">
+        <div class="col col-xs-12">
+            <div class="col col-xs-12 col-sm-5 album__display-info">
+                <h2>{{ artist.artist }}</h2>
+                <h3>{{ artist.album.title }}</h3> Release Date:
+                <p class="album__date">{{ artist.album.release | date:"MMMM dd, yyyy" }}</p>
+                Genre:
+                <p class="album__genre">{{ artist.genre }}</p>
+                <div>
+                    <audio controls>
+                        <source ng-src="{{ artist.album.exSong }}" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-7 img-responsive">
+                <img ng-src="{{artist.album.cover}}">
+            </div>
+            <div class="album__display-desc">
+                <p>{{ artist.album.desc }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row comments">
+    <h2>Comments</h2>
+    <p>Love it? Hate it? Tell us what you think!</p>
+    <form>
+        <div class="comments__info">
+            <input placeholder="name"></input>
+            <input placeholder="email"></input>
+        </div>
+        <textarea>
+        
+    </textarea>
+    </form>
 </div>

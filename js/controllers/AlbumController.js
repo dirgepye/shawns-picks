@@ -3,8 +3,7 @@ app.controller('AlbumController', ['$scope', '$routeParams', 'artists',function(
   artists.success(function(data) { 
   		$scope.artist = data[$routeParams.albumId];
     });
-	
-  // Using this property to create the URL in line 9 of views/book.html
+
   $scope.currentAlbum = parseInt($routeParams.albumId);
   
 }]);

@@ -5,9 +5,9 @@
         <img class="head-img img-responsive" ng-src="{{artist.header}}">
 
     </div>
-    <div class="row home__album">
-        <div class="home__album-details col col-md-7">
-            <div class="row">
+    <div class="row no-pad home__display">
+        <div class="home__display-details col col-md-7">
+            <div class="row no-pad">
                 <div class="col-xs-9">
                     <h2>{{ artist.artist }}</h2>
                     <h3>{{ artist.album.title }}</h3>
@@ -17,7 +17,7 @@
                     <div class="home__rating"><p>{{ artist.album.rating }}</p></div>
                 </div>
             </div>
-            <div class="row home__album-desc">
+            <div class="row home__display-desc">
                 <p>{{artist.album.desc | limitTo:200}}...</p>
             </div>
 
